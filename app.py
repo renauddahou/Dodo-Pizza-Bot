@@ -85,15 +85,15 @@ def send(message):
         bot.send_message(message.chat.id, "💌 A propos de nous\n\nMais pour nous, Dodo, ce n'est pas que de la pizza. C'est aussi de la pizza, mais c'est avant tout une grande cause qui nous inspire, qui nous fait nous lever chaque matin et...", reply_markup=keyboard)
     elif message.text == 'Notre site web':
         keyboard = types.InlineKeyboardMarkup()
-        url_button = types.InlineKeyboardButton(text="Перейти на сайт", url="https://dodopizza.ru")
+        url_button = types.InlineKeyboardButton(text="Aller sur le site", url="https://dodopizza.ru")
         keyboard.add(url_button)
         photo = open('huthgutgh.jpeg', 'rb')
         bot.send_photo(message.chat.id, photo, reply_markup=keyboard)
-    elif message.text == 'Вконтакте':
+    elif message.text == 'Facebook':
         keyboard = types.InlineKeyboardMarkup()
-        url_button = types.InlineKeyboardButton(text='Перейти по ссылке', url='https://vk.com/dodo')
+        url_button = types.InlineKeyboardButton(text='Cliquez sur le lien', url='https://vk.com/dodo')
         keyboard.add(url_button)
-        bot.send_message(message.chat.id, "❤️Мы появились Вконтакте", reply_markup=keyboard)
+        bot.send_message(message.chat.id, "❤️Nous sommes apparus sur VKontakte", reply_markup=keyboard)
     elif message.text == '🏛 Actualités':
         photo = open('novosti_dodo.jpg', 'rb')
         bot.send_photo(message.chat.id, photo, caption="15 premiers prix 🤩\n\nKnight City a ouvert ses portes au public aujourd'hui, et nous lançons un cyber-concours ! Tirage au sort de produits dérivés de Cyberpunk 2077 : 10 t-shirts, 4 blousons et une console Xbox Series X fournie avec le jeu.\n\nCe qu'il faut faire:\n1. Commandez une pizza Dodo 2077.\n2. Retrouvez-le sur notre compte Instagram (https://www.instagram.com/dodopizza/) Insta-masque Dodo 2077. Dirigez-le vers la boîte à pizza et prenez une photo/vidéo du cyberhologramme.\n3. Mettez-le dans votre storie.\n4. Tic-tac @dodopizza.\n\nLes résultats seront résumés en direct le 26 décembre à l'aide d'un randomiseur. Un compte Instagram ouvert est une condition préalable. Bonne chance à tous !\n\nRègles détaillées de la campagne — https://vk.cc/bVOsIv")
